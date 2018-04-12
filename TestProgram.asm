@@ -29,4 +29,3 @@
 	# Swap registers $t1 and $t2
 	addi $t0,$zero,5 
 	addi  $t8,$zero, 10
-	
