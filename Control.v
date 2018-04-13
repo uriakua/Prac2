@@ -28,6 +28,7 @@ module Control
 localparam R_Type = 0;
 localparam I_Type_ADDI = 6'h8;
 localparam I_Type_ORI = 6'h0d;
+localparam I_Type_BEQ =  6'h04;
 
 
 reg [10:0] ControlValues;
@@ -35,11 +36,12 @@ reg [10:0] ControlValues;
 always@(OP) begin
 	casex(OP)
 		R_Type:       ControlValues= 11'b1_001_00_00_111;
-
+		I_Type_BEQ:   ControlValues = 15'b0_0_0_0_0_000_00_01_011;
 		
 		
 		default:
 			ControlValues= 10'b0000000000;
+			
 		endcase
 end	
 	
