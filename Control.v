@@ -28,7 +28,19 @@ module Control
 localparam R_Type = 0;
 localparam I_Type_ADDI = 6'h8;
 localparam I_Type_ORI = 6'h0d;
-localparam I_Type_BEQ =  6'h04;
+
+localparam I_Type_LUI = 
+
+localparam I_Type_BEQ = 
+localparam I_Type_BNE =
+ 
+ 
+localparam I_Type_SW =  
+localparam I_Type_LW =   
+  
+
+localparam J_Type_Jump = 
+localparam J_Type_Jal =  
 
 
 reg [10:0] ControlValues;
@@ -36,25 +48,45 @@ reg [10:0] ControlValues;
 always@(OP) begin
 	casex(OP)
 		R_Type:       ControlValues= 11'b1_001_00_00_111;
-		I_Type_BEQ:   ControlValues = 15'b0_0_0_0_0_000_00_01_011;
+		
+		I_Type_ADDI: 	ControlValues = ;
+		I_Type_ORI: 	ControlValues = ;
+		
+		I_Type_LUI: 	ControlValues = ;
+		
+		I_Type_BEQ: 	ControlValues = ;
+		I_Type_BNE: 	ControlValues = ;
+		
+		I_Type_SW: 		ControlValues = ;
+		I_Type_LW: 		ControlValues = ;
+		
+		
+		J_Type_Jump: 	ControlValues = ;
+		J_Type_Jal: 	ControlValues = ;
+
 		
 		
 		default:
 			ControlValues= 10'b0000000000;
-			
 		endcase
 end	
 	
 assign RegDst = ControlValues[10];
+
 assign ALUSrc = ControlValues[9];
+
 assign MemtoReg = ControlValues[8];
+
 assign RegWrite = ControlValues[7];
+
 assign MemRead = ControlValues[6];
+
 assign MemWrite = ControlValues[5];
+
 assign BranchNE = ControlValues[4];
+
 assign BranchEQ = ControlValues[3];
+
 assign ALUOp = ControlValues[2:0];	
 
 endmodule
-
-
