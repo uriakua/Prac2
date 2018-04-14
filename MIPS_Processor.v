@@ -59,7 +59,8 @@ wire [2:0] ALUOp_wire;
 wire [3:0] ALUOperation_wire;
 wire [4:0] WriteRegister_wire;
 
-
+wire [31:0] MUX_PC_wire;
+wire [31:0] PC_wire;
 wire [31:0] Instruction_wire;
 wire [31:0] ReadData1_wire;
 wire [31:0] ReadData2_wire;
@@ -85,7 +86,7 @@ ControlUnit
 	.BranchNE(BranchNE_wire),
 	.BranchEQ(BranchEQ_wire),
 	.ALUOp(ALUOp_wire),
-	.ALUSrc(ALUSrc_wire)
+	.ALUSrc(ALUSrc_wire),
 	.RegWrite(RegWrite_wire)
 );
 
