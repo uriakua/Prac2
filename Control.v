@@ -48,21 +48,21 @@ reg [10:0] ControlValues;
 always@(OP) begin
 	casex(OP)
 		R_Type:       ControlValues= 11'b1_001_00_00_111;
-		
+													  
 		I_Type_ADDI: 	ControlValues = 11'b1_101_00_00_100; 
 		I_Type_ORI: 	ControlValues = 11'b1_101_00_00_101;
+													 //not sure if b0 or b1
+		I_Type_LUI: 	ControlValues = 11'b0_001_00_00_000;
 		
-		I_Type_LUI: 	ControlValues = ;
+		I_Type_BEQ: 	ControlValues = 11'b0_000_00_01_010;
+		I_Type_BNE: 	ControlValues = 11'b0_000_00_10_010;
 		
-		I_Type_BEQ: 	ControlValues = ;
-		I_Type_BNE: 	ControlValues = ;
-		
-		I_Type_SW: 		ControlValues = ;
-		I_Type_LW: 		ControlValues = ;
+		I_Type_SW: 		ControlValues = 11'b0_100_01_00_100;
+		I_Type_LW: 		ControlValues = 11'b0_111_10_00_100;
 		
 		
-		J_Type_Jump: 	ControlValues = ;
-		J_Type_Jal: 	ControlValues = ;
+		J_Type_Jump: 	ControlValues = 11'b0_000_00_00_000;
+		J_Type_Jal: 	ControlValues = 11'b0_001_00_00_000;
 
 		
 		
