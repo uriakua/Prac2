@@ -41,8 +41,6 @@ always@(Selector)begin
 		
 		I_Type_ADDI:	ALUControlValues = 4'b0011;
 		I_Type_ORI: 	ALUControlValues = 4'b0001;
-
-		
 		default: ALUControlValues = 4'b1001;
 	endcase
 end

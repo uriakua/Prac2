@@ -18,7 +18,9 @@ reg reset = 0;
 reg [7:0] PortIn; 
 wire [31:0] ALUResultOut;  
 wire [31:0] PortOut;
-  
+wire [4:0]	ReadReg1;
+wire [4:0]	ReadReg2;
+wire [4:0]  WriteReg;
   
 MIPS_Processor
 DUV
@@ -26,8 +28,10 @@ DUV
 	.clk(clk),
 	.reset(reset),
 	.ALUResultOut(ALUResultOut),
-	.PortOut(PortOut)
-
+	.PortOut(PortOut),
+	.ReadReg1(ReadReg1),
+	.ReadReg2(ReadReg2),
+	.WriteReg(WriteReg)
 );
 /*********************************************************/
 initial // Clock generator

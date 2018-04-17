@@ -41,7 +41,7 @@ set_global_assignment -name DEVICE EP4CE115F29C7
 set_global_assignment -name TOP_LEVEL_ENTITY MIPS_Processor
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:57:31  ABRIL 16, 2018"
-set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION 12.1
 set_global_assignment -name VERILOG_FILE DecoderRegisterFile.v
 set_global_assignment -name VERILOG_FILE MUXRegisterFile.v
 set_global_assignment -name VERILOG_FILE Register.v

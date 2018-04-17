@@ -1,0 +1,96 @@
+C:/Users/Usuario/Desktop/PortableGit/Prac2/ANDGate.v {1 {vlog -work work -vopt C:/Users/Usuario/Desktop/PortableGit/Prac2/ANDGate.v
+Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
+-- Compiling module ANDGate
+
+Top level modules:
+	ANDGate
+
+} {} {}} C:/Users/Usuario/Desktop/PortableGit/Prac2/Definitions.v {1 {vlog -work work -vopt C:/Users/Usuario/Desktop/PortableGit/Prac2/Definitions.v
+Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
+
+} {} {}} C:/Users/Usuario/Desktop/PortableGit/Prac2/Register.v {1 {vlog -work work -vopt C:/Users/Usuario/Desktop/PortableGit/Prac2/Register.v
+Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
+-- Compiling module Register
+
+Top level modules:
+	Register
+
+} {} {}} C:/Users/Usuario/Desktop/PortableGit/Prac2/MUXRegisterFile.v {1 {vlog -work work -vopt C:/Users/Usuario/Desktop/PortableGit/Prac2/MUXRegisterFile.v
+Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
+-- Compiling module MUXRegisterFile
+
+Top level modules:
+	MUXRegisterFile
+
+} {} {}} C:/Users/Usuario/Desktop/PortableGit/Prac2/MIPS_Processor.v {1 {vlog -work work -vopt C:/Users/Usuario/Desktop/PortableGit/Prac2/MIPS_Processor.v
+Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
+-- Compiling module MIPS_Processor
+
+Top level modules:
+	MIPS_Processor
+
+} {} {}} C:/Users/Usuario/Desktop/PortableGit/Prac2/SignExtend.v {1 {vlog -work work -vopt C:/Users/Usuario/Desktop/PortableGit/Prac2/SignExtend.v
+Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
+-- Compiling module SignExtend
+
+Top level modules:
+	SignExtend
+
+} {} {}} C:/Users/Usuario/Desktop/PortableGit/Prac2/ProgramMemory.v {1 {vlog -work work -vopt C:/Users/Usuario/Desktop/PortableGit/Prac2/SignExtend.v
+Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
+-- Compiling module SignExtend
+
+Top level modules:
+	SignExtend
+
+} {} {}} C:/Users/Usuario/Desktop/PortableGit/Prac2/Multiplexer2to1.v {1 {vlog -work work -vopt C:/Users/Usuario/Desktop/PortableGit/Prac2/Multiplexer2to1.v
+Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
+-- Compiling module Multiplexer2to1
+
+Top level modules:
+	Multiplexer2to1
+
+} {} {}} C:/Users/Usuario/Desktop/PortableGit/Prac2/DataMemory.v {1 {vlog -work work -vopt C:/Users/Usuario/Desktop/PortableGit/Prac2/DataMemory.v
+Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
+-- Compiling module DataMemory
+
+Top level modules:
+	DataMemory
+
+} {} {}} C:/Users/Usuario/Desktop/PortableGit/Prac2/ShiftLeft2.v {1 {vlog -work work -vopt C:/Users/Usuario/Desktop/PortableGit/Prac2/ShiftLeft2.v
+Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
+-- Compiling module ShiftLeft2
+
+Top level modules:
+	ShiftLeft2
+
+} {} {}} C:/Users/Usuario/Desktop/PortableGit/Prac2/Adder32bits.v {2 {vlog -work work -vopt C:/Users/Usuario/Desktop/PortableGit/Prac2/Adder32bits.v
+Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
+-- Compiling module ProgramMemory
+Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
+** Warning: (vlog-6) -- Waiting for lock by "Usuario@F10112, pid = 7000
+". Lockfile is "C:/Users/Usuario/Desktop/PortableGit/Prac2/work/_lock".
+
+
+Top level modules:
+	ProgramMemory
+-- Compiling module Adder32bits
+
+Top level modules:
+	Adder32bits
+
+} {} {}} C:/Users/Usuario/Desktop/PortableGit/Prac2/PC_Register.v {1 {vlog -work work -vopt C:/Users/Usuario/Desktop/PortableGit/Prac2/PC_Register.v
+Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
+-- Compiling module PC_Register
+
+Top level modules:
+	PC_Register
+
+} {} {}} C:/Users/Usuario/Desktop/PortableGit/Prac2/DecoderRegisterFile.v {1 {vlog -work work -vopt C:/Users/Usuario/Desktop/PortableGit/Prac2/DecoderRegisterFile.v
+Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
+-- Compiling module DecoderRegisterFile
+
+Top level modules:
+	DecoderRegisterFile
+
+} {} {}}
