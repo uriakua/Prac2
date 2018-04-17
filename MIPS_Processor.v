@@ -5,18 +5,15 @@
 	 TUESDAY 17, APRIL 2018
 */
 
-module MIPS_Processor
+		module MIPS_Processor
 #(
 	parameter MEMORY_DEPTH = 256
 )
 (
 	input clk,						 //CLK
 	input reset,					 //RESET
-	input [7:0] PortIn,		    //PORT_IN
-	output [31:0] ALUResultOut, //ALUResultOut
-	output [4:0] ReadReg1,
-	output [4:0] ReadReg2,
-	output [4:0] WriteReg,
+	input  [7:0]   PortIn,		    //PORT_IN
+	output [31:0] ALUResultOut,
 	output [31:0] PortOut		 //PortOut
 );
 
@@ -24,9 +21,10 @@ assign  PortOut = 0;
 
 //WIRE CONNECTIONS//////////////////
 wire BranchNE_wire;
+wire Jump_wire;
 wire BranchEQ_wire;
 wire RegDst_wire;
-wire NotZeroANDBrachNE;
+wire NotANDANDBrachNE;
 wire ZeroANDBrachEQ;
 wire ORForBranch;
 wire ALUSrc_wire;
@@ -36,7 +34,10 @@ wire MemtoReg_wire;
 wire MemRead_wire;
 wire MemWrite_wire;
 wire PCsrc_wire;
-wire [2:0]  ALUOp_wire;
+wire [27:0] JumpAddressShifter_wire;
+wire [31:0] JumpAddress_wire;
+wire [31:0] NewPCJump_wire;
+wire [1:0]  ALUOp_wire;
 wire [3:0]  ALUOperation_wire;
 wire [4:0]  WriteRegister_wire;
 wire [31:0] MUX_PC_wire;
@@ -66,7 +67,7 @@ integer ALUStatus;
 (
 	 .clk(clk),
 	 .reset(reset),
-	 .NewPC(MUX_OFFSET_wire),
+	 .NewPC(NewPCJump_wire),
 	 .PCValue(PC_wire)
 );
 ///////////////////////////////////
@@ -75,7 +76,7 @@ ProgramMemory
 #(
 	.MEMORY_DEPTH(MEMORY_DEPTH)   			 //DEFINE MEMORY SIZE
 )
-ROMProgramMemory
+InstructionMemory
 (
 	.Address(PC_wire),					   	 //INSTRUCTION'S ADDRESS
 	.Instruction(Instruction_wire)			 //INSTRUCTION OUTPUT
@@ -93,7 +94,8 @@ ControlUnit
 	.ALUSrc(ALUSrc_wire),						 //ALU SRC
 	.RegWrite(RegWrite_wire),					 //RegWrite Flag
 	.MemRead(MemRead_wire),
-	.MemWrite(MemWrite_wire)
+	.MemWrite(MemWrite_wire),
+	.Jump(Jump_wire)
 );
 //////////////////////////////////
 //DATA SELECTORS//////////////////
@@ -101,13 +103,12 @@ Multiplexer2to1
 #(
 	.NBits(5)
 )
-MUX_ForRTypeAndIType
+MUX_RegisterWriteSelect
 (
 	.Selector(RegDst_wire),						//DATA SELECTOR INPUT
 	.MUX_Data0(Instruction_wire[20:16]), 	//RT TYPE
 	.MUX_Data1(Instruction_wire[15:11]),   //RD TYPE
-	.MUX_Output(WriteRegister_wire)			//MuxOutput
-
+	.MUX_Output(WriteRegister_wire)			//MuxOutput (5-bit)
 );
 
 Multiplexer2to1
@@ -147,6 +148,20 @@ MUX_PC_OFFSET
 	.MUX_Output(MUX_OFFSET_wire)
 
 );
+
+Multiplexer2to1
+#(
+	.NBits(32)
+)
+MUX_JUMPADDRESS
+(
+	.Selector(Jump_wire),     			 //If MemtoReg active sends data read from memory to register
+	.MUX_Data0(MUX_OFFSET_wire),   			 //Data from ALU
+	.MUX_Data1(JumpAddress_wire), 			 //Data from memory
+	.MUX_Output(NewPCJump_wire)
+
+);
+
 //////////////////////////////////
 //REGISTER FILE///////////////////
 RegisterFile
@@ -161,7 +176,6 @@ Register_File
 	.WriteData(DataMemoryMux_wire),			  //WriteData Flag
 	.ReadData1(ReadData1_wire),				  //RegisterOutput 1
 	.ReadData2(ReadData2_wire)					  //RegisterOutput 2
-
 );
 //////////////////////////////////
 //SIGN EXTENSION/////////////////
@@ -172,7 +186,6 @@ SignExtendForConstants
   .SignExtendOutput(InmmediateExtend_wire) //Extended-Instruction
 );
 //////////////////////////////////
-
 //ARITHMETIC LOGIC UNIT (ALU)////
 ALUControl
 ArithmeticLogicUnitControl
@@ -228,18 +241,25 @@ RAM
 );
 ////////////////////////////////
 //SHIFT-LEFT////////////////////*****
-ShiftLeft2
+ShiftLeft2	
 BranchAddressShifter
 (
 	.DataInput(InmmediateExtend_wire),
    .DataOutput(BranchAddress_wire)
 );
 
+ShiftLeft2	
+JumpAddressShifter
+(
+	.DataInput(Instruction_wire[25:0]),
+   .DataOutput(JumpAddressShifter_wire)
+);
+
+
 ////////////////////////////////
 
 assign ALUResultOut = ALUResult_wire;
-assign ReadReg1 = Instruction_wire[25:21];
-assign ReadReg2 = Instruction_wire[20:16];
-assign WriteReg = WriteRegister_wire;
+assign PCsrc_wire = ((BranchNE_wire & ~(Zero_wire))| (BranchEQ_wire & Zero_wire));
+assign JumpAddress_wire = {{PC_4_wire[31:28], JumpAddressShifter_wire}};
 
 endmodule

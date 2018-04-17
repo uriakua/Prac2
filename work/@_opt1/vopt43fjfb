@@ -1,0 +1,343 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\modeltech64_10.1d\examples
+T_opt
+V:nRgk3haA`IQHNlN1kfKc3
+Z1 04 17 4 work MIPS_Processor_TB fast 0
+=1-6c3be5268b33-5ad527c2-16e-2050
+Z2 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z3 OL;O;10.1d;51
+Z4 dC:\modeltech64_10.1d\examples
+T_opt1
+V2]GJPANH2JPdP<cLez8o43
+R1
+=1-6c3be5268b33-5ad591fd-dd-8cf0
+R2
+n@_opt1
+R3
+vAdder32bits
+I3^7gZFaP<9c22_aOBSmGf2
+VhbeHMJ9:9][[WIY?Ingef0
+Z5 dC:\PortableGit\Prac2
+Z6 w1523918450
+8C:/PortableGit/Prac2/Adder32bits.v
+FC:/PortableGit/Prac2/Adder32bits.v
+L0 13
+Z7 OL;L;10.1d;51
+r1
+31
+Z8 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+n@adder32bits
+!s100 8Uh?O9T8McKK01AM`0O:63
+!s90 -reportprogress|300|-work|work|-vopt|C:/PortableGit/Prac2/Adder32bits.v|
+!s108 1523945956.396000
+!s107 C:/PortableGit/Prac2/Adder32bits.v|
+!i10b 1
+!s85 0
+vALU
+I9Ja_V;5@:kg][k;kEKI490
+VX?7JjznJ[`4e<^zaa=]DE2
+R5
+w1523945703
+8C:/PortableGit/Prac2/ALU.v
+FC:/PortableGit/Prac2/ALU.v
+L0 20
+R7
+r1
+31
+R8
+n@a@l@u
+!s100 AZcMi1KohBBY4QBQ43LaO0
+!s90 -reportprogress|300|-work|work|-vopt|C:/PortableGit/Prac2/ALU.v|
+!s108 1523945956.542000
+!s107 C:/PortableGit/Prac2/ALU.v|
+!i10b 1
+!s85 0
+vALUControl
+INJJSo]d?dC;BK4UfFf4KU0
+V=F@dGcRiD6f`mi4cOf?e>1
+R5
+w1523945842
+8C:/PortableGit/Prac2/ALUControl.v
+FC:/PortableGit/Prac2/ALUControl.v
+L0 15
+R7
+r1
+31
+R8
+n@a@l@u@control
+!s90 -reportprogress|300|-work|work|-vopt|C:/PortableGit/Prac2/ALUControl.v|
+!s100 =N3GaN9c;D;Wi84;:I;0:0
+!s108 1523945956.798000
+!s107 C:/PortableGit/Prac2/ALUControl.v|
+!i10b 1
+!s85 0
+vANDGate
+Iz=_Hj3DDNS?l_NaV8c;`e1
+V@P6ZJzDP4U00DFc40UnH?0
+R5
+R6
+8C:/PortableGit/Prac2/ANDGate.v
+FC:/PortableGit/Prac2/ANDGate.v
+L0 13
+R7
+r1
+31
+R8
+n@a@n@d@gate
+!s100 [5K<`h^fEC;NZ2FafN`k;0
+!s90 -reportprogress|300|-work|work|-vopt|C:/PortableGit/Prac2/ANDGate.v|
+!s108 1523945956.973000
+!s107 C:/PortableGit/Prac2/ANDGate.v|
+!i10b 1
+!s85 0
+vControl
+I6L9d3HW4Xm@cXh4O;^T211
+Vz:K>_dX<NB9mlKU@9>RGK2
+R5
+w1523944953
+8C:/PortableGit/Prac2/Control.v
+FC:/PortableGit/Prac2/Control.v
+L0 14
+R7
+r1
+31
+R8
+n@control
+!s90 -reportprogress|300|-work|work|-vopt|C:/PortableGit/Prac2/Control.v|
+!s100 EK<VRY=5X7g=mF[LQ4Ooj1
+!s108 1523945957.208000
+!s107 C:/PortableGit/Prac2/Control.v|
+!i10b 1
+!s85 0
+vDataMemory
+I7Wb:81iE3n<=oi7=TKMek0
+V4L9lB_hUOgDh5240fH`j10
+R5
+R6
+8C:/PortableGit/Prac2/DataMemory.v
+FC:/PortableGit/Prac2/DataMemory.v
+L0 13
+R7
+r1
+31
+R8
+n@data@memory
+!s100 Ha?5a8]8I];b?VQ:oSm?32
+!s90 -reportprogress|300|-work|work|-vopt|C:/PortableGit/Prac2/DataMemory.v|
+!s108 1523945957.467000
+!s107 C:/PortableGit/Prac2/DataMemory.v|
+!i10b 1
+!s85 0
+vDecoderRegisterFile
+IGP>ao?`IKFRgo63>iAi@D2
+VAzJiE5G;z;;Z`IVeRHbi]2
+R5
+R6
+8C:/PortableGit/Prac2/DecoderRegisterFile.v
+FC:/PortableGit/Prac2/DecoderRegisterFile.v
+L0 12
+R7
+r1
+31
+R8
+n@decoder@register@file
+!s100 7gB_jamAGcE>IDX=E;zR90
+!s90 -reportprogress|300|-work|work|-vopt|C:/PortableGit/Prac2/DecoderRegisterFile.v|
+!s108 1523945957.668000
+!s107 C:/PortableGit/Prac2/DecoderRegisterFile.v|
+!i10b 1
+!s85 0
+vMIPS_Processor
+IVLib`an7F8Ue8JOJAd7Ro3
+VZYQ=_alhW[3Id`6CQ^?=70
+R5
+w1523945837
+8C:/PortableGit/Prac2/MIPS_Processor.v
+FC:/PortableGit/Prac2/MIPS_Processor.v
+L0 8
+R7
+r1
+31
+R8
+n@m@i@p@s_@processor
+!s90 -reportprogress|300|-work|work|-vopt|C:/PortableGit/Prac2/MIPS_Processor.v|
+!s100 R[9cE40i@AOk:dTn8NiM:3
+!s108 1523945958.230000
+!s107 C:/PortableGit/Prac2/MIPS_Processor.v|
+!i10b 1
+!s85 0
+vMIPS_Processor_TB
+I;60_Rc>YNkjj?d]m<T@fn0
+VF;RK8<I_2l2fKA6oTTYc[0
+R5
+w1523937671
+8C:/PortableGit/Prac2/MIPS_Processor_TB.v
+FC:/PortableGit/Prac2/MIPS_Processor_TB.v
+L0 15
+R7
+r1
+31
+R8
+n@m@i@p@s_@processor_@t@b
+!s100 9TD[?iBP1KAGako9;1gZI3
+!s90 -reportprogress|300|-work|work|-vopt|C:/PortableGit/Prac2/MIPS_Processor_TB.v|
+!s108 1523945958.436000
+!s107 C:/PortableGit/Prac2/MIPS_Processor_TB.v|
+!i10b 1
+!s85 0
+vMultiplexer2to1
+IVzkGBHnklPRX4@Am@SI_z0
+VVK]UMc9_`U;kn>BU8WnV61
+R5
+w1523937303
+8C:/PortableGit/Prac2/Multiplexer2to1.v
+FC:/PortableGit/Prac2/Multiplexer2to1.v
+L0 1
+R7
+r1
+31
+R8
+n@multiplexer2to1
+!s100 1nGDF7Kjoez5C2RY7S83h0
+!s90 -reportprogress|300|-work|work|-vopt|C:/PortableGit/Prac2/Multiplexer2to1.v|
+!s108 1523945958.685000
+!s107 C:/PortableGit/Prac2/Multiplexer2to1.v|
+!i10b 1
+!s85 0
+vMUXRegisterFile
+ICSa0<4?^TkX<QnE@IOYML1
+VFY5?DFN3TE7YHT48]kVZO0
+R5
+R6
+8C:/PortableGit/Prac2/MUXRegisterFile.v
+FC:/PortableGit/Prac2/MUXRegisterFile.v
+L0 2
+R7
+r1
+31
+R8
+n@m@u@x@register@file
+!s100 VIYBz`kn>TWVUW5T]i:`d2
+!s90 -reportprogress|300|-work|work|-vopt|C:/PortableGit/Prac2/MUXRegisterFile.v|
+!s108 1523945958.849000
+!s107 C:/PortableGit/Prac2/MUXRegisterFile.v|
+!i10b 1
+!s85 0
+vPC_Register
+I5hjbDcHjeT=7[Vn4R8no<0
+V2:fMeLJdzQT:7g8FXJzTc1
+R5
+R6
+8C:/PortableGit/Prac2/PC_Register.v
+FC:/PortableGit/Prac2/PC_Register.v
+L0 15
+R7
+r1
+31
+R8
+n@p@c_@register
+!s100 O[egm^9O6z6Y_NcgT<WSj1
+!s90 -reportprogress|300|-work|work|-vopt|C:/PortableGit/Prac2/PC_Register.v|
+!s108 1523945959.004000
+!s107 C:/PortableGit/Prac2/PC_Register.v|
+!i10b 1
+!s85 0
+vProgramMemory
+IjX^;<]z]fAK;S4m<J<_aW2
+VCC`gfbQneU65h7iiQf?k:2
+R5
+w1523938554
+8C:/PortableGit/Prac2/ProgramMemory.v
+FC:/PortableGit/Prac2/ProgramMemory.v
+L0 1
+R7
+r1
+31
+R8
+n@program@memory
+!s100 S9<<D;eQW[Of:E7eo;G8a3
+!s90 -reportprogress|300|-work|work|-vopt|C:/PortableGit/Prac2/ProgramMemory.v|
+!s108 1523945959.195000
+!s107 C:/PortableGit/Prac2/ProgramMemory.v|
+!i10b 1
+!s85 0
+vRegister
+IYFOe^h`gcTieNY1<lSFFP3
+V=zJ3n6de@MA;R2<J<Hg2>0
+R5
+R6
+8C:/PortableGit/Prac2/Register.v
+FC:/PortableGit/Prac2/Register.v
+L0 12
+R7
+r1
+31
+R8
+n@register
+!s100 kl`aCR>Ub88]@c^e^Y`Z>2
+!s90 -reportprogress|300|-work|work|-vopt|C:/PortableGit/Prac2/Register.v|
+!s108 1523945959.501000
+!s107 C:/PortableGit/Prac2/Register.v|
+!i10b 1
+!s85 0
+vRegisterFile
+IOh>9`zbzQJKV8cF6V?_co2
+VNW:i3U9n;NY?X@GQ<b1oG0
+R5
+w1523919029
+8C:/PortableGit/Prac2/RegisterFile.v
+FC:/PortableGit/Prac2/RegisterFile.v
+L0 15
+R7
+r1
+31
+R8
+n@register@file
+!s100 PzMHKX_Ul1W_UAZfNQRTT2
+!s90 -reportprogress|300|-work|work|-vopt|C:/PortableGit/Prac2/RegisterFile.v|
+!s108 1523945959.738000
+!s107 C:/PortableGit/Prac2/RegisterFile.v|
+!i10b 1
+!s85 0
+vShiftLeft2
+I@^3FFk2PaeEL6J3V@zIfd1
+Vnb>Sakz<@KW@i;;^V8USl3
+R5
+R6
+8C:/PortableGit/Prac2/ShiftLeft2.v
+FC:/PortableGit/Prac2/ShiftLeft2.v
+L0 12
+R7
+r1
+31
+R8
+n@shift@left2
+!s100 FWMUm@mf;Voz09k]PHEGC0
+!s90 -reportprogress|300|-work|work|-vopt|C:/PortableGit/Prac2/ShiftLeft2.v|
+!s108 1523945959.931000
+!s107 C:/PortableGit/Prac2/ShiftLeft2.v|
+!i10b 1
+!s85 0
+vSignExtend
+I7m9Z4loZB=OkeP69bzI_U2
+V3c0EGMRjO^8AQ<D2Q;35d2
+R5
+R6
+8C:/PortableGit/Prac2/SignExtend.v
+FC:/PortableGit/Prac2/SignExtend.v
+L0 14
+R7
+r1
+31
+R8
+n@sign@extend
+!s100 >F_ZKEKIbES6o6R:H776U0
+!s90 -reportprogress|300|-work|work|-vopt|C:/PortableGit/Prac2/SignExtend.v|
+!i10b 1
+!s85 0
+!s108 1523945960.167000
+!s107 C:/PortableGit/Prac2/SignExtend.v|

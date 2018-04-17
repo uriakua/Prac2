@@ -68,13 +68,6 @@ Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
 Top level modules:
 	Adder32bits
 
-} {} {}} C:/PortableGit/Prac2/MIPS_Processor.v {1 {vlog -work work -vopt C:/PortableGit/Prac2/MIPS_Processor.v
-Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
--- Compiling module MIPS_Processor
-
-Top level modules:
-	MIPS_Processor
-
 } {} {}} C:/PortableGit/Prac2/SignExtend.v {1 {vlog -work work -vopt C:/PortableGit/Prac2/SignExtend.v
 Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
 -- Compiling module SignExtend
@@ -88,13 +81,6 @@ Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
 
 Top level modules:
 	ShiftLeft2
-
-} {} {}} C:/PortableGit/Prac2/ALUControl.v {1 {vlog -work work -vopt C:/PortableGit/Prac2/ALUControl.v
-Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
--- Compiling module ALUControl
-
-Top level modules:
-	ALUControl
 
 } {} {}} C:/PortableGit/Prac2/DataMemory.v {1 {vlog -work work -vopt C:/PortableGit/Prac2/DataMemory.v
 Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012

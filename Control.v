@@ -1,20 +1,7 @@
-/******************************************************************
-* Description
-*	This is control unit for the MIPS processor. The control unit is 
-*	in charge of generation of the control signals. Its only input 
-*	corresponds to opcode from the instruction.
-*	1.0
-* Author:
-*	Dr. José Luis Pizano Escalante
-* email:
-*	luispizano@iteso.mx
-* Date:
-*	01/03/2014
-******************************************************************/
+
 module Control
 (
-	input [5:0]OP,
-	
+	input [5:0]OP,	//OPCODE 
 	output RegDst,
 	output BranchEQ,
 	output BranchNE,
@@ -23,7 +10,8 @@ module Control
 	output MemWrite,
 	output ALUSrc,
 	output RegWrite,
-	output [2:0]ALUOp
+	output Jump,
+	output [1:0]ALUOp
 );
 localparam R_Type = 0;
 localparam I_Type_ADDI = 6'h8;
@@ -37,32 +25,36 @@ localparam J_Type_Jump = 6'h02;
 localparam J_Type_Jal =  6'h03;
 
 reg [10:0] ControlValues;
-
+//00 ADITION
+//01 SUBSTRACITON
+//10 FUNCT
 always@(OP) begin
 	casex(OP)
-		R_Type:        ControlValues=  11'b1_001_00_00_111; 
-		I_Type_ADDI: 	ControlValues = 11'b1_101_00_00_100; 
-		I_Type_ORI: 	ControlValues = 11'b1_101_00_00_101;
-		I_Type_LUI: 	ControlValues = 11'b0_001_00_00_000;
-		I_Type_BEQ: 	ControlValues = 11'b0_000_00_01_010;
-		I_Type_BNE: 	ControlValues = 11'b0_000_00_10_010;
-		I_Type_SW: 		ControlValues = 11'b0_100_01_00_100;
-		I_Type_LW: 		ControlValues = 11'b0_111_10_00_100;	
-		J_Type_Jump: 	ControlValues = 11'b0_000_00_00_000;
-		J_Type_Jal: 	ControlValues = 11'b0_001_00_00_000;
+		R_Type:        ControlValues=  11'b1_001_00_00_0_10; 
+		I_Type_ORI: 	ControlValues = 11'b0_101_00_00_0_01;
+		I_Type_LUI: 	ControlValues = 11'b0_001_00_00_0_00;
+		I_Type_BEQ: 	ControlValues = 11'b0_000_00_01_0_01;
+		I_Type_BNE: 	ControlValues = 11'b0_100_00_10_0_01;	
+		I_Type_ADDI: 	ControlValues = 11'b0_101_00_00_0_00;
+		I_Type_SW: 		ControlValues = 11'b0_100_01_00_0_00;
+		I_Type_LW: 		ControlValues = 11'b0_111_10_00_0_00;	
+		I_Type_BEQ:    ControlValues = 11'b0_000_00_01_0_01;
+		I_Type_BNE:		ControlValues = 11'b0_000_00_10_0_01;
+		J_Type_Jump: 	ControlValues = 11'b0_000_00_00_1_00;
+		J_Type_Jal: 	ControlValues = 11'b0_001_00_00_1_00;
 		default:
-			ControlValues= 10'b0000000000;
+		ControlValues= 10'b0000000000;
 		endcase
 end	
 	
-assign RegDst = ControlValues[10];
-assign ALUSrc = ControlValues[9];
-assign MemtoReg = ControlValues[8];
-assign RegWrite = ControlValues[7];
-assign MemRead = ControlValues[6];
-assign MemWrite = ControlValues[5];
-assign BranchNE = ControlValues[4];
-assign BranchEQ = ControlValues[3];
-assign ALUOp = ControlValues[2:0];	
+assign RegDst   = ControlValues[9];
+assign ALUSrc   = ControlValues[8];
+assign MemtoReg = ControlValues[7];
+assign RegWrite = ControlValues[6];
+assign MemRead  =  ControlValues[5];
+assign MemWrite = ControlValues[4];
+assign BranchNE = ControlValues[3];
+assign BranchEQ = ControlValues[2];
+assign ALUOp    = ControlValues[1:0];	
 
 endmodule
