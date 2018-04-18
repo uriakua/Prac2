@@ -34,12 +34,10 @@ wire MemtoReg_wire;
 wire MemRead_wire;
 wire MemWrite_wire;
 wire PCsrc_wire;
-wire [27:0] JumpAddressShifter_wire;
-wire [31:0] JumpAddress_wire;
-wire [31:0] NewPCJump_wire;
 wire [1:0]  ALUOp_wire;
 wire [3:0]  ALUOperation_wire;
 wire [4:0]  WriteRegister_wire;
+wire [27:0] JumpAddressShifter_wire;
 wire [31:0] MUX_PC_wire;
 wire [31:0] PC_wire;
 wire [31:0] PC_4_wire;
@@ -56,6 +54,8 @@ wire [31:0] RAM_ReadData_wire;
 wire [31:0] DataMemoryMux_wire;
 wire [31:0] BranchAddress_wire;
 wire [31:0] OffsetAdded_wire;
+wire [31:0] JumpAddress_wire;
+wire [31:0] NewPCJump_wire;
 integer ALUStatus;
 
 //PROGRAM-COUNTER//////////////////
@@ -67,8 +67,8 @@ integer ALUStatus;
 (
 	 .clk(clk),
 	 .reset(reset),
-	 .NewPC(NewPCJump_wire),
-	 .PCValue(PC_wire)
+	 .NewPC(NewPCJump_wire),//32-bit input
+	 .PCValue(PC_wire) //32-bit output
 );
 ///////////////////////////////////
 //INSTRUCTION MEMORY///////////////
@@ -103,7 +103,7 @@ Multiplexer2to1
 #(
 	.NBits(5)
 )
-MUX_RegisterWriteSelect
+MUX_RegDst
 (
 	.Selector(RegDst_wire),						//DATA SELECTOR INPUT
 	.MUX_Data0(Instruction_wire[20:16]), 	//RT TYPE
@@ -115,7 +115,7 @@ Multiplexer2to1
 #(
 	.NBits(32)
 )
-MUX_ForReadDataAndInmediate
+MUX_ALUSrc
 (
 	.Selector(ALUSrc_wire),						 //DATA SELECTOR INPUT
 	.MUX_Data0(ReadData2_wire),				 //RT TYPE
@@ -133,27 +133,25 @@ MUX_MemtoReg
 	.MUX_Data0(ALUResult_wire),   			 //Data from ALU
 	.MUX_Data1(RAM_ReadData_wire), 			 //Data from memory
 	.MUX_Output(DataMemoryMux_wire)
-
 );
 
 Multiplexer2to1
 #(
 	.NBits(32)
 )
-MUX_PC_OFFSET
+MUX_Branch
 (
 	.Selector(PCsrc_wire),     			 //If MemtoReg active sends data read from memory to register
 	.MUX_Data0(PC_4_wire),   			 //Data from ALU
 	.MUX_Data1(OffsetAdded_wire), 			 //Data from memory
 	.MUX_Output(MUX_OFFSET_wire)
-
 );
 
 Multiplexer2to1
 #(
 	.NBits(32)
 )
-MUX_JUMPADDRESS
+MUX_Jump
 (
 	.Selector(Jump_wire),     			 //If MemtoReg active sends data read from memory to register
 	.MUX_Data0(MUX_OFFSET_wire),   			 //Data from ALU
@@ -207,7 +205,7 @@ ArithmeticLogicUnit
 //////////////////////////////////
 //ADDERS//////////////////////////
 Adder32bits
-PC_Puls_4
+PC_ADD4
 (
 	.Data0(PC_wire),
 	.Data1(4),
@@ -216,7 +214,7 @@ PC_Puls_4
 );
 
 Adder32bits
-PC_OFFSET
+AdderPCOffset
 (
 	.Data0(PC_4_wire),
 	.Data1(BranchAddress_wire), //SHIFT LEFT 2
@@ -230,7 +228,7 @@ DataMemory
 	.DATA_WIDTH(32),
 	.MEMORY_DEPTH(256)
 )
-RAM
+DataMemory
 (
 	.clk(clk),
 	.WriteData(ReadData2_wire),

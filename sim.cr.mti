@@ -1,9 +1,72 @@
-C:/PortableGit/Prac2/MUXRegisterFile.v {1 {vlog -work work -vopt C:/PortableGit/Prac2/MUXRegisterFile.v
+/home/c/Documents/GIT/Prac2/MIPS_Processor.v {1 {vlog -work work -stats=none /home/c/Documents/GIT/Prac2/MIPS_Processor.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module MIPS_Processor
+
+Top level modules:
+	MIPS_Processor
+
+} {} {}} /home/c/Documents/GIT/Prac2/Control.v {1 {vlog -work work -stats=none /home/c/Documents/GIT/Prac2/Control.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module Control
+
+Top level modules:
+	Control
+
+} {} {}} /home/c/Documents/GIT/Prac2/SignExtend.v {1 {vlog -work work -stats=none /home/c/Documents/GIT/Prac2/SignExtend.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module SignExtend
+
+Top level modules:
+	SignExtend
+
+} {} {}} /home/c/Documents/GIT/Prac2/ProgramMemory.v {1 {vlog -work work -stats=none /home/c/Documents/GIT/Prac2/ProgramMemory.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module ProgramMemory
+
+Top level modules:
+	ProgramMemory
+
+} {} {}} /home/c/Documents/GIT/Prac2/Multiplexer2to1.v {1 {vlog -work work -stats=none /home/c/Documents/GIT/Prac2/Multiplexer2to1.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module Multiplexer2to1
+
+Top level modules:
+	Multiplexer2to1
+
+} {} {}} /home/c/Documents/GIT/Prac2/ALU.v {1 {vlog -work work -stats=none /home/c/Documents/GIT/Prac2/ALU.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} C:/PortableGit/Prac2/MUXRegisterFile.v {1 {vlog -work work -vopt C:/PortableGit/Prac2/MUXRegisterFile.v
 Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
 -- Compiling module MUXRegisterFile
 
 Top level modules:
 	MUXRegisterFile
+
+} {} {}} /home/c/Documents/GIT/Prac2/ShiftLeft2.v {1 {vlog -work work -stats=none /home/c/Documents/GIT/Prac2/ShiftLeft2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module ShiftLeft2
+
+Top level modules:
+	ShiftLeft2
+
+} {} {}} /home/c/Documents/GIT/Prac2/DataMemory.v {1 {vlog -work work -stats=none /home/c/Documents/GIT/Prac2/DataMemory.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module DataMemory
+
+Top level modules:
+	DataMemory
+
+} {} {}} /home/c/Documents/GIT/Prac2/ALUControl.v {1 {vlog -work work -stats=none /home/c/Documents/GIT/Prac2/ALUControl.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module ALUControl
+
+Top level modules:
+	ALUControl
 
 } {} {}} C:/PortableGit/Prac2/ProgramMemory.v {1 {vlog -work work -vopt C:/PortableGit/Prac2/ProgramMemory.v
 Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
@@ -33,19 +96,26 @@ Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
 Top level modules:
 	ALU
 
-} {} {}} C:/PortableGit/Prac2/MIPS_Processor_TB.v {1 {vlog -work work -vopt C:/PortableGit/Prac2/MIPS_Processor_TB.v
-Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
+} {} {}} /home/c/Documents/GIT/Prac2/MIPS_Processor_TB.v {1 {vlog -work work -stats=none /home/c/Documents/GIT/Prac2/MIPS_Processor_TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
 -- Compiling module MIPS_Processor_TB
 
 Top level modules:
 	MIPS_Processor_TB
 
-} {} {}} C:/PortableGit/Prac2/RegisterFile.v {1 {vlog -work work -vopt C:/PortableGit/Prac2/RegisterFile.v
-Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
--- Compiling module RegisterFile
+} {} {}} /home/c/Documents/GIT/Prac2/Adder32bits.v {1 {vlog -work work -stats=none /home/c/Documents/GIT/Prac2/Adder32bits.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module Adder32bits
 
 Top level modules:
-	RegisterFile
+	Adder32bits
+
+} {} {}} /home/c/Documents/GIT/Prac2/PC_Register.v {1 {vlog -work work -stats=none /home/c/Documents/GIT/Prac2/PC_Register.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module PC_Register
+
+Top level modules:
+	PC_Register
 
 } {} {}} C:/PortableGit/Prac2/Register.v {1 {vlog -work work -vopt C:/PortableGit/Prac2/Register.v
 Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
@@ -54,12 +124,19 @@ Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
 Top level modules:
 	Register
 
-} {} {}} C:/PortableGit/Prac2/PC_Register.v {1 {vlog -work work -vopt C:/PortableGit/Prac2/PC_Register.v
+} {} {}} C:/PortableGit/Prac2/RegisterFile.v {1 {vlog -work work -vopt C:/PortableGit/Prac2/RegisterFile.v
 Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
--- Compiling module PC_Register
+-- Compiling module RegisterFile
 
 Top level modules:
-	PC_Register
+	RegisterFile
+
+} {} {}} C:/PortableGit/Prac2/MIPS_Processor_TB.v {1 {vlog -work work -vopt C:/PortableGit/Prac2/MIPS_Processor_TB.v
+Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
+-- Compiling module MIPS_Processor_TB
+
+Top level modules:
+	MIPS_Processor_TB
 
 } {} {}} C:/PortableGit/Prac2/Adder32bits.v {1 {vlog -work work -vopt C:/PortableGit/Prac2/Adder32bits.v
 Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
@@ -68,12 +145,50 @@ Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
 Top level modules:
 	Adder32bits
 
+} {} {}} C:/PortableGit/Prac2/PC_Register.v {1 {vlog -work work -vopt C:/PortableGit/Prac2/PC_Register.v
+Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
+-- Compiling module PC_Register
+
+Top level modules:
+	PC_Register
+
+} {} {}} /home/c/Documents/GIT/Prac2/DecoderRegisterFile.v {1 {vlog -work work -stats=none /home/c/Documents/GIT/Prac2/DecoderRegisterFile.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module DecoderRegisterFile
+
+Top level modules:
+	DecoderRegisterFile
+
 } {} {}} C:/PortableGit/Prac2/SignExtend.v {1 {vlog -work work -vopt C:/PortableGit/Prac2/SignExtend.v
 Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
 -- Compiling module SignExtend
 
 Top level modules:
 	SignExtend
+
+} {} {}} /home/c/Documents/GIT/Prac2/ANDGate.v {1 {vlog -work work -stats=none /home/c/Documents/GIT/Prac2/ANDGate.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module ANDGate
+
+Top level modules:
+	ANDGate
+
+} {} {}} /home/c/Documents/GIT/Prac2/Definitions.v {1 {vlog -work work -stats=none /home/c/Documents/GIT/Prac2/Definitions.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+
+} {} {}} /home/c/Documents/GIT/Prac2/Register.v {1 {vlog -work work -stats=none /home/c/Documents/GIT/Prac2/Register.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module Register
+
+Top level modules:
+	Register
+
+} {} {}} /home/c/Documents/GIT/Prac2/RegisterFile.v {1 {vlog -work work -stats=none /home/c/Documents/GIT/Prac2/RegisterFile.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module RegisterFile
+
+Top level modules:
+	RegisterFile
 
 } {} {}} C:/PortableGit/Prac2/ShiftLeft2.v {1 {vlog -work work -vopt C:/PortableGit/Prac2/ShiftLeft2.v
 Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
@@ -105,5 +220,12 @@ Top level modules:
 
 } {} {}} C:/PortableGit/Prac2/Definitions.v {1 {vlog -work work -vopt C:/PortableGit/Prac2/Definitions.v
 Model Technology ModelSim SE-64 vlog 10.1d Compiler 2012.11 Nov  1 2012
+
+} {} {}} /home/c/Documents/GIT/Prac2/MUXRegisterFile.v {1 {vlog -work work -stats=none /home/c/Documents/GIT/Prac2/MUXRegisterFile.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5c Compiler 2017.01 Jan 23 2017
+-- Compiling module MUXRegisterFile
+
+Top level modules:
+	MUXRegisterFile
 
 } {} {}}

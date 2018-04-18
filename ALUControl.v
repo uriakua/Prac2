@@ -5,11 +5,13 @@ module ALUControl
 	output [3:0] ALUOperation
 
 );
-
-localparam R_Type_AND  = 8'b11_100100;
-localparam R_Type_OR   = 8'b11_100101;
-localparam R_Type_NOR  = 8'b11_100111;
-localparam R_Type_ADD  = 8'b11_100000;
+//00 ADITION
+//01 SUBSTRACITON
+//10 FUNCT
+localparam R_Type_AND  = 8'b10_100100;
+localparam R_Type_OR   = 8'b10_100101;
+localparam R_Type_NOR  = 8'b10_100111;
+localparam R_Type_ADD  = 8'b10_100000;
 localparam I_Type_ADDI = 8'b00_xxxxxx;
 localparam I_Type_ORI  = 8'b01_xxxxxx;
 localparam BEQ_AND_BNE = 8'b01_xxxxxx;

@@ -1,6 +1,6 @@
 Analysis & Synthesis report for MIPS_PROCESSOR_PRAC2
-Tue Apr 17 04:12:35 2018
-Quartus II 32-bit Version 12.1 Build 177 11/07/2012 SJ Web Edition
+Wed Apr 18 12:45:11 2018
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -16,98 +16,100 @@ Quartus II 32-bit Version 12.1 Build 177 11/07/2012 SJ Web Edition
   8. Registers Removed During Synthesis
   9. Removed Registers Triggering Further Register Optimizations
  10. General Register Statistics
- 11. Parameter Settings for User Entity Instance: Top-level Entity: |MIPS_Processor
- 12. Parameter Settings for User Entity Instance: PC_Register:programCounter
- 13. Parameter Settings for User Entity Instance: ProgramMemory:InstructionMemory
- 14. Parameter Settings for User Entity Instance: Multiplexer2to1:MUX_RegisterWriteSelect
- 15. Parameter Settings for User Entity Instance: Multiplexer2to1:MUX_ForReadDataAndInmediate
- 16. Parameter Settings for User Entity Instance: Multiplexer2to1:MUX_MemtoReg
- 17. Parameter Settings for User Entity Instance: Multiplexer2to1:MUX_PC_OFFSET
- 18. Parameter Settings for User Entity Instance: Multiplexer2to1:MUX_JUMPADDRESS
- 19. Parameter Settings for User Entity Instance: RegisterFile:Register_File
- 20. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_Zero
- 21. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_at
- 22. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_v0
- 23. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_v1
- 24. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_a0
- 25. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_a1
- 26. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_a2
- 27. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_a3
- 28. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_t0
- 29. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_t1
- 30. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_t2
- 31. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_t3
- 32. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_t4
- 33. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_t5
- 34. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_t6
- 35. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_t7
- 36. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_s0
- 37. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_s1
- 38. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_s2
- 39. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_s3
- 40. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_s4
- 41. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_s5
- 42. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_s6
- 43. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_s7
- 44. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_t8
- 45. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_t9
- 46. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_k0
- 47. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_k1
- 48. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_gp
- 49. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_sp
- 50. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_fp
- 51. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_ra
- 52. Parameter Settings for User Entity Instance: RegisterFile:Register_File|MUXRegisterFile:MUXRegister1
- 53. Parameter Settings for User Entity Instance: RegisterFile:Register_File|MUXRegisterFile:MUXRegister2
- 54. Parameter Settings for User Entity Instance: Adder32bits:PC_Puls_4
- 55. Parameter Settings for User Entity Instance: Adder32bits:PC_OFFSET
- 56. Parameter Settings for User Entity Instance: DataMemory:RAM
- 57. Port Connectivity Checks: "ShiftLeft2:JumpAddressShifter"
- 58. Port Connectivity Checks: "Adder32bits:PC_Puls_4"
- 59. Port Connectivity Checks: "RegisterFile:Register_File|Register:Register_Zero"
- 60. Port Connectivity Checks: "Control:ControlUnit"
- 61. Elapsed Time Per Partition
- 62. Analysis & Synthesis Messages
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |MIPS_Processor
+ 13. Parameter Settings for User Entity Instance: PC_Register:programCounter
+ 14. Parameter Settings for User Entity Instance: ProgramMemory:InstructionMemory
+ 15. Parameter Settings for User Entity Instance: Multiplexer2to1:MUX_RegDst
+ 16. Parameter Settings for User Entity Instance: Multiplexer2to1:MUX_ALUSrc
+ 17. Parameter Settings for User Entity Instance: Multiplexer2to1:MUX_MemtoReg
+ 18. Parameter Settings for User Entity Instance: Multiplexer2to1:MUX_Branch
+ 19. Parameter Settings for User Entity Instance: Multiplexer2to1:MUX_Jump
+ 20. Parameter Settings for User Entity Instance: RegisterFile:Register_File
+ 21. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_Zero
+ 22. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_at
+ 23. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_v0
+ 24. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_v1
+ 25. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_a0
+ 26. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_a1
+ 27. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_a2
+ 28. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_a3
+ 29. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_t0
+ 30. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_t1
+ 31. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_t2
+ 32. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_t3
+ 33. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_t4
+ 34. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_t5
+ 35. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_t6
+ 36. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_t7
+ 37. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_s0
+ 38. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_s1
+ 39. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_s2
+ 40. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_s3
+ 41. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_s4
+ 42. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_s5
+ 43. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_s6
+ 44. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_s7
+ 45. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_t8
+ 46. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_t9
+ 47. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_k0
+ 48. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_k1
+ 49. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_gp
+ 50. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_sp
+ 51. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_fp
+ 52. Parameter Settings for User Entity Instance: RegisterFile:Register_File|Register:Register_ra
+ 53. Parameter Settings for User Entity Instance: RegisterFile:Register_File|MUXRegisterFile:MUXRegister1
+ 54. Parameter Settings for User Entity Instance: RegisterFile:Register_File|MUXRegisterFile:MUXRegister2
+ 55. Parameter Settings for User Entity Instance: Adder32bits:PC_ADD4
+ 56. Parameter Settings for User Entity Instance: Adder32bits:AdderPCOffset
+ 57. Parameter Settings for User Entity Instance: DataMemory:DataMemory
+ 58. Port Connectivity Checks: "ShiftLeft2:JumpAddressShifter"
+ 59. Port Connectivity Checks: "Adder32bits:PC_ADD4"
+ 60. Port Connectivity Checks: "RegisterFile:Register_File|Register:Register_Zero"
+ 61. Port Connectivity Checks: "Control:ControlUnit"
+ 62. Post-Synthesis Netlist Statistics for Top Partition
+ 63. Elapsed Time Per Partition
+ 64. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2012 Altera Corporation
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, Altera MegaCore Function License 
-Agreement, or other applicable license agreement, including, 
-without limitation, that your use is for the sole purpose of 
-programming logic devices manufactured by Altera and sold by 
-Altera or its authorized distributors.  Please refer to the 
-applicable agreement for further details.
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 17 04:12:35 2018    ;
-; Quartus II 32-bit Version          ; 12.1 Build 177 11/07/2012 SJ Web Edition ;
-; Revision Name                      ; MIPS_PROCESSOR_PRAC2                     ;
-; Top-level Entity Name              ; MIPS_Processor                           ;
-; Family                             ; Cyclone IV E                             ;
-; Total logic elements               ; 0                                        ;
-;     Total combinational functions  ; 0                                        ;
-;     Dedicated logic registers      ; 0                                        ;
-; Total registers                    ; 0                                        ;
-; Total pins                         ; 74                                       ;
-; Total virtual pins                 ; 0                                        ;
-; Total memory bits                  ; 0                                        ;
-; Embedded Multiplier 9-bit elements ; 0                                        ;
-; Total PLLs                         ; 0                                        ;
-+------------------------------------+------------------------------------------+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Apr 18 12:45:11 2018       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                      ; MIPS_PROCESSOR_PRAC2                        ;
+; Top-level Entity Name              ; MIPS_Processor                              ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 280                                         ;
+;     Total combinational functions  ; 248                                         ;
+;     Dedicated logic registers      ; 72                                          ;
+; Total registers                    ; 72                                          ;
+; Total pins                         ; 74                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------+
@@ -117,14 +119,14 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+----------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                      ;
 ; Top-level entity name                                                      ; MIPS_Processor     ; MIPS_PROCESSOR_PRAC2 ;
-; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX        ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V            ;
 ; Use smart compilation                                                      ; Off                ; Off                  ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                   ;
 ; Enable compact report table                                                ; Off                ; Off                  ;
 ; Restructure Multiplexers                                                   ; Auto               ; Auto                 ;
 ; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                  ;
 ; Preserve fewer node names                                                  ; On                 ; On                   ;
-; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                  ;
+; Intel FPGA IP Evaluation Mode                                              ; Enable             ; Enable               ;
 ; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001         ;
 ; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993            ;
 ; State Machine Processing                                                   ; Auto               ; Auto                 ;
@@ -177,7 +179,7 @@ applicable agreement for further details.
 ; Report Connectivity Checks                                                 ; On                 ; On                   ;
 ; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                  ;
 ; Synchronization Register Chain Length                                      ; 2                  ; 2                    ;
-; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation   ;
+; Power Optimization During Synthesis                                        ; Normal compilation ; Normal compilation   ;
 ; HDL message level                                                          ; Level2             ; Level2               ;
 ; Suppress Register Optimization Related Messages                            ; Off                ; Off                  ;
 ; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000                 ;
@@ -193,80 +195,101 @@ applicable agreement for further details.
 ; Analysis & Synthesis Message Level                                         ; Medium             ; Medium               ;
 ; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto                 ;
 ; Resource Aware Inference For Block RAM                                     ; On                 ; On                   ;
-; Synthesis Seed                                                             ; 1                  ; 1                    ;
 +----------------------------------------------------------------------------+--------------------+----------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                   ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path               ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------+---------+
-; DecoderRegisterFile.v            ; yes             ; User Verilog HDL File        ; C:/PortableGit/Prac2/DecoderRegisterFile.v ;         ;
-; MUXRegisterFile.v                ; yes             ; User Verilog HDL File        ; C:/PortableGit/Prac2/MUXRegisterFile.v     ;         ;
-; Register.v                       ; yes             ; User Verilog HDL File        ; C:/PortableGit/Prac2/Register.v            ;         ;
-; PC_Register.v                    ; yes             ; User Verilog HDL File        ; C:/PortableGit/Prac2/PC_Register.v         ;         ;
-; Adder32bits.v                    ; yes             ; User Verilog HDL File        ; C:/PortableGit/Prac2/Adder32bits.v         ;         ;
-; MIPS_Processor.v                 ; yes             ; User Verilog HDL File        ; C:/PortableGit/Prac2/MIPS_Processor.v      ;         ;
-; Multiplexer2to1.v                ; yes             ; User Verilog HDL File        ; C:/PortableGit/Prac2/Multiplexer2to1.v     ;         ;
-; ProgramMemory.v                  ; yes             ; User Verilog HDL File        ; C:/PortableGit/Prac2/ProgramMemory.v       ;         ;
-; ALUControl.v                     ; yes             ; User Verilog HDL File        ; C:/PortableGit/Prac2/ALUControl.v          ;         ;
-; DataMemory.v                     ; yes             ; User Verilog HDL File        ; C:/PortableGit/Prac2/DataMemory.v          ;         ;
-; ShiftLeft2.v                     ; yes             ; User Verilog HDL File        ; C:/PortableGit/Prac2/ShiftLeft2.v          ;         ;
-; SignExtend.v                     ; yes             ; User Verilog HDL File        ; C:/PortableGit/Prac2/SignExtend.v          ;         ;
-; Control.v                        ; yes             ; User Verilog HDL File        ; C:/PortableGit/Prac2/Control.v             ;         ;
-; RegisterFile.v                   ; yes             ; User Verilog HDL File        ; C:/PortableGit/Prac2/RegisterFile.v        ;         ;
-; ALU.v                            ; yes             ; User Verilog HDL File        ; C:/PortableGit/Prac2/ALU.v                 ;         ;
-; iteration_10.dat                 ; yes             ; Auto-Found Unspecified File  ; C:/PortableGit/Prac2/iteration_10.dat      ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                          ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                      ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------+---------+
+; DecoderRegisterFile.v            ; yes             ; User Verilog HDL File        ; /home/c/Documents/GIT/Prac2/DecoderRegisterFile.v ;         ;
+; MUXRegisterFile.v                ; yes             ; User Verilog HDL File        ; /home/c/Documents/GIT/Prac2/MUXRegisterFile.v     ;         ;
+; Register.v                       ; yes             ; User Verilog HDL File        ; /home/c/Documents/GIT/Prac2/Register.v            ;         ;
+; PC_Register.v                    ; yes             ; User Verilog HDL File        ; /home/c/Documents/GIT/Prac2/PC_Register.v         ;         ;
+; Adder32bits.v                    ; yes             ; User Verilog HDL File        ; /home/c/Documents/GIT/Prac2/Adder32bits.v         ;         ;
+; MIPS_Processor.v                 ; yes             ; User Verilog HDL File        ; /home/c/Documents/GIT/Prac2/MIPS_Processor.v      ;         ;
+; Multiplexer2to1.v                ; yes             ; User Verilog HDL File        ; /home/c/Documents/GIT/Prac2/Multiplexer2to1.v     ;         ;
+; ProgramMemory.v                  ; yes             ; User Verilog HDL File        ; /home/c/Documents/GIT/Prac2/ProgramMemory.v       ;         ;
+; ALUControl.v                     ; yes             ; User Verilog HDL File        ; /home/c/Documents/GIT/Prac2/ALUControl.v          ;         ;
+; DataMemory.v                     ; yes             ; User Verilog HDL File        ; /home/c/Documents/GIT/Prac2/DataMemory.v          ;         ;
+; ShiftLeft2.v                     ; yes             ; User Verilog HDL File        ; /home/c/Documents/GIT/Prac2/ShiftLeft2.v          ;         ;
+; SignExtend.v                     ; yes             ; User Verilog HDL File        ; /home/c/Documents/GIT/Prac2/SignExtend.v          ;         ;
+; Control.v                        ; yes             ; User Verilog HDL File        ; /home/c/Documents/GIT/Prac2/Control.v             ;         ;
+; RegisterFile.v                   ; yes             ; User Verilog HDL File        ; /home/c/Documents/GIT/Prac2/RegisterFile.v        ;         ;
+; ALU.v                            ; yes             ; User Verilog HDL File        ; /home/c/Documents/GIT/Prac2/ALU.v                 ;         ;
+; iteration_10.dat                 ; yes             ; Auto-Found Unspecified File  ; /home/c/Documents/GIT/Prac2/iteration_10.dat      ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 74    ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 74    ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 280       ;
+;                                             ;           ;
+; Total combinational functions               ; 248       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 140       ;
+;     -- 3 input functions                    ; 92        ;
+;     -- <=2 input functions                  ; 16        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 203       ;
+;     -- arithmetic mode                      ; 45        ;
+;                                             ;           ;
+; Total registers                             ; 72        ;
+;     -- Dedicated logic registers            ; 72        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 74        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 72        ;
+; Total fan-out                               ; 1269      ;
+; Average fan-out                             ; 2.71      ;
++---------------------------------------------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
-; |MIPS_Processor            ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 74   ; 0            ; |MIPS_Processor     ;              ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                              ;
++--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node                 ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                     ; Entity Name     ; Library Name ;
++--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+-----------------+--------------+
+; |MIPS_Processor                            ; 248 (1)             ; 72 (0)                    ; 0           ; 0            ; 0       ; 0         ; 74   ; 0            ; |MIPS_Processor                                                         ; MIPS_Processor  ; work         ;
+;    |ALU:ArithmeticLogicUnit|               ; 118 (118)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIPS_Processor|ALU:ArithmeticLogicUnit                                 ; ALU             ; work         ;
+;    |ALUControl:ArithmeticLogicUnitControl| ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIPS_Processor|ALUControl:ArithmeticLogicUnitControl                   ; ALUControl      ; work         ;
+;    |Adder32bits:PC_ADD4|                   ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIPS_Processor|Adder32bits:PC_ADD4                                     ; Adder32bits     ; work         ;
+;    |Control:ControlUnit|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIPS_Processor|Control:ControlUnit                                     ; Control         ; work         ;
+;    |Multiplexer2to1:MUX_ALUSrc|            ; 64 (64)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIPS_Processor|Multiplexer2to1:MUX_ALUSrc                              ; Multiplexer2to1 ; work         ;
+;    |Multiplexer2to1:MUX_RegDst|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIPS_Processor|Multiplexer2to1:MUX_RegDst                              ; Multiplexer2to1 ; work         ;
+;    |PC_Register:programCounter|            ; 8 (8)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIPS_Processor|PC_Register:programCounter                              ; PC_Register     ; work         ;
+;    |ProgramMemory:InstructionMemory|       ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIPS_Processor|ProgramMemory:InstructionMemory                         ; ProgramMemory   ; work         ;
+;    |RegisterFile:Register_File|            ; 34 (2)              ; 64 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIPS_Processor|RegisterFile:Register_File                              ; RegisterFile    ; work         ;
+;       |MUXRegisterFile:MUXRegister1|       ; 32 (32)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIPS_Processor|RegisterFile:Register_File|MUXRegisterFile:MUXRegister1 ; MUXRegisterFile ; work         ;
+;       |Register:Register_at|               ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIPS_Processor|RegisterFile:Register_File|Register:Register_at         ; Register        ; work         ;
+;       |Register:Register_t0|               ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MIPS_Processor|RegisterFile:Register_File|Register:Register_t0         ; Register        ; work         ;
++--------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -278,102 +301,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; RegisterFile:Register_File|Register:Register_Zero|DataOutput[0..31] ; Stuck at GND due to stuck port data_in            ;
 ; PC_Register:programCounter|PCValue[1]                               ; Merged with PC_Register:programCounter|PCValue[0] ;
 ; PC_Register:programCounter|PCValue[0]                               ; Stuck at GND due to stuck port data_in            ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[0]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[0]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[0]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[31]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[31]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[31]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[30]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[30]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[30]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[29]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[29]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[29]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[28]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[28]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[28]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[27]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[27]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[27]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[26]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[26]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[26]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[25]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[25]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[25]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[24]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[24]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[24]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[23]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[23]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[23]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[22]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[22]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[22]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[21]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[21]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[21]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[20]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[20]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[20]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[19]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[19]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[19]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[18]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[18]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[18]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[17]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[17]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[17]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[16]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[16]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[16]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[15]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[15]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[15]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[14]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[14]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[14]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[13]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[13]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[13]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[12]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[12]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[12]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[11]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[11]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[11]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[10]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[10]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[10]      ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[9]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[9]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[9]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[8]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[8]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[8]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[7]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[7]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[7]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[6]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[6]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[6]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[5]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[5]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[5]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[4]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[4]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[4]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[3]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[3]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[3]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[2]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[2]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[2]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_at|DataOutput[1]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t0|DataOutput[1]       ; Stuck at GND due to stuck port clock_enable       ;
-; RegisterFile:Register_File|Register:Register_t1|DataOutput[1]       ; Stuck at GND due to stuck port clock_enable       ;
 ; RegisterFile:Register_File|Register:Register_v0|DataOutput[0]       ; Lost fanout                                       ;
 ; RegisterFile:Register_File|Register:Register_v1|DataOutput[0]       ; Lost fanout                                       ;
 ; RegisterFile:Register_File|Register:Register_a0|DataOutput[0]       ; Lost fanout                                       ;
@@ -1270,111 +1197,80 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; RegisterFile:Register_File|Register:Register_sp|DataOutput[1]       ; Lost fanout                                       ;
 ; RegisterFile:Register_File|Register:Register_fp|DataOutput[1]       ; Lost fanout                                       ;
 ; RegisterFile:Register_File|Register:Register_ra|DataOutput[1]       ; Lost fanout                                       ;
-; PC_Register:programCounter|PCValue[2..31]                           ; Lost fanout                                       ;
-; Total Number of Removed Registers = 1056                            ;                                                   ;
+; RegisterFile:Register_File|Register:Register_t1|DataOutput[0..31]   ; Stuck at GND due to stuck port clock_enable       ;
+; Total Number of Removed Registers = 962                             ;                                                   ;
 +---------------------------------------------------------------------+---------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                                  ;
-+------------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
-; Register name                                                    ; Reason for Removal        ; Registers Removed due to This Register                                        ;
-+------------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[0]  ; Stuck at GND              ; PC_Register:programCounter|PCValue[0],                                        ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_at|DataOutput[0],                ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t0|DataOutput[0],                ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[0],                ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_at|DataOutput[31],               ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t0|DataOutput[31],               ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[31],               ;
-;                                                                  ;                           ; PC_Register:programCounter|PCValue[2], PC_Register:programCounter|PCValue[3], ;
-;                                                                  ;                           ; PC_Register:programCounter|PCValue[4], PC_Register:programCounter|PCValue[5], ;
-;                                                                  ;                           ; PC_Register:programCounter|PCValue[6], PC_Register:programCounter|PCValue[7], ;
-;                                                                  ;                           ; PC_Register:programCounter|PCValue[8], PC_Register:programCounter|PCValue[9]  ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[23] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[23],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[23],               ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[23]                ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[22] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[22],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[22],               ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[22]                ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[21] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[21],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[21],               ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[21]                ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[20] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[20],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[20],               ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[20]                ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[19] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[19],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[19],               ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[19]                ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[18] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[18],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[18],               ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[18]                ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[17] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[17],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[17],               ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[17]                ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[16] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[16],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[16],               ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[16]                ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[15] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[15],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[15],               ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[15]                ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[14] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[14],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[14],               ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[14]                ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[13] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[13],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[13],               ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[13]                ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[12] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[12],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[12],               ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[12]                ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[11] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[11],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[11],               ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[11]                ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[10] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[10],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[10],               ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[10]                ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[9]  ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[9],                ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[9],                ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[9]                 ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[8]  ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[8],                ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[8],                ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[8]                 ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[7]  ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[7],                ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[7],                ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[7]                 ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[6]  ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[6],                ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[6],                ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[6]                 ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[5]  ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[5],                ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[5],                ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[5]                 ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[4]  ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[4],                ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[4],                ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[4]                 ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[3]  ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[3],                ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[3],                ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[3]                 ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[2]  ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[2],                ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[2],                ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[2]                 ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[1]  ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_at|DataOutput[1],                ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t0|DataOutput[1],                ;
-;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[1]                 ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[30] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_v0|DataOutput[30],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_v1|DataOutput[30]                ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[29] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_v0|DataOutput[29],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_v1|DataOutput[29]                ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[28] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_v0|DataOutput[28],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_v1|DataOutput[28]                ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[27] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_v0|DataOutput[27],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_v1|DataOutput[27]                ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[26] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_v0|DataOutput[26],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_v1|DataOutput[26]                ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[25] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_v0|DataOutput[25],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_v1|DataOutput[25]                ;
-; RegisterFile:Register_File|Register:Register_Zero|DataOutput[24] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_v0|DataOutput[24],               ;
-;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_v1|DataOutput[24]                ;
-+------------------------------------------------------------------+---------------------------+-------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                    ;
++------------------------------------------------------------------+---------------------------+-----------------------------------------------------------------+
+; Register name                                                    ; Reason for Removal        ; Registers Removed due to This Register                          ;
++------------------------------------------------------------------+---------------------------+-----------------------------------------------------------------+
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[0]  ; Stuck at GND              ; PC_Register:programCounter|PCValue[0],                          ;
+;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_t1|DataOutput[0],  ;
+;                                                                  ;                           ; RegisterFile:Register_File|Register:Register_t1|DataOutput[31]  ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[30] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_v0|DataOutput[30], ;
+;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_v1|DataOutput[30]  ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[24] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_v0|DataOutput[24], ;
+;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_v1|DataOutput[24]  ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[25] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_v0|DataOutput[25], ;
+;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_v1|DataOutput[25]  ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[26] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_v0|DataOutput[26], ;
+;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_v1|DataOutput[26]  ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[27] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_v0|DataOutput[27], ;
+;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_v1|DataOutput[27]  ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[28] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_v0|DataOutput[28], ;
+;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_v1|DataOutput[28]  ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[29] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_v0|DataOutput[29], ;
+;                                                                  ; due to stuck port data_in ; RegisterFile:Register_File|Register:Register_v1|DataOutput[29]  ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[1]  ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[1]   ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[2]  ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[2]   ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[3]  ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[3]   ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[4]  ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[4]   ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[5]  ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[5]   ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[6]  ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[6]   ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[7]  ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[7]   ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[8]  ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[8]   ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[9]  ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[9]   ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[10] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[10]  ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[11] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[11]  ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[12] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[12]  ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[13] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[13]  ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[14] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[14]  ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[15] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[15]  ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[16] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[16]  ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[17] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[17]  ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[18] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[18]  ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[19] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[19]  ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[20] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[20]  ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[21] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[21]  ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[22] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[22]  ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
+; RegisterFile:Register_File|Register:Register_Zero|DataOutput[23] ; Stuck at GND              ; RegisterFile:Register_File|Register:Register_t1|DataOutput[23]  ;
+;                                                                  ; due to stuck port data_in ;                                                                 ;
++------------------------------------------------------------------+---------------------------+-----------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -1382,14 +1278,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 72    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Synchronous Load   ; 8     ;
+; Number of registers using Asynchronous Clear ; 72    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 64    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------+
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MIPS_Processor|RegisterFile:Register_File|MUXRegisterFile:MUXRegister1|Mux13 ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |MIPS_Processor|ALU:ArithmeticLogicUnit|Mux0                                  ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 64 LEs               ; 32 LEs                 ; No         ; |MIPS_Processor|Multiplexer2to1:MUX_ALUSrc|MUX_Output[25]                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------+
@@ -1423,23 +1330,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Multiplexer2to1:MUX_RegisterWriteSelect ;
-+----------------+-------+-------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                        ;
-+----------------+-------+-------------------------------------------------------------+
-; NBits          ; 5     ; Signed Integer                                              ;
-+----------------+-------+-------------------------------------------------------------+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplexer2to1:MUX_RegDst ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; NBits          ; 5     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Multiplexer2to1:MUX_ForReadDataAndInmediate ;
-+----------------+-------+-----------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                            ;
-+----------------+-------+-----------------------------------------------------------------+
-; NBits          ; 32    ; Signed Integer                                                  ;
-+----------------+-------+-----------------------------------------------------------------+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplexer2to1:MUX_ALUSrc ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; NBits          ; 32    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1453,23 +1360,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Multiplexer2to1:MUX_PC_OFFSET ;
-+----------------+-------+---------------------------------------------------+
-; Parameter Name ; Value ; Type                                              ;
-+----------------+-------+---------------------------------------------------+
-; NBits          ; 32    ; Signed Integer                                    ;
-+----------------+-------+---------------------------------------------------+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplexer2to1:MUX_Branch ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; NBits          ; 32    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Multiplexer2to1:MUX_JUMPADDRESS ;
-+----------------+-------+-----------------------------------------------------+
-; Parameter Name ; Value ; Type                                                ;
-+----------------+-------+-----------------------------------------------------+
-; NBits          ; 32    ; Signed Integer                                      ;
-+----------------+-------+-----------------------------------------------------+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Multiplexer2to1:MUX_Jump ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; NBits          ; 32    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1823,34 +1730,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Adder32bits:PC_Puls_4 ;
-+----------------+-------+-------------------------------------------+
-; Parameter Name ; Value ; Type                                      ;
-+----------------+-------+-------------------------------------------+
-; NBits          ; 32    ; Signed Integer                            ;
-+----------------+-------+-------------------------------------------+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Adder32bits:PC_ADD4 ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; NBits          ; 32    ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Adder32bits:AdderPCOffset ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; NBits          ; 32    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Adder32bits:PC_OFFSET ;
+; Parameter Settings for User Entity Instance: DataMemory:DataMemory ;
 +----------------+-------+-------------------------------------------+
 ; Parameter Name ; Value ; Type                                      ;
 +----------------+-------+-------------------------------------------+
-; NBits          ; 32    ; Signed Integer                            ;
+; DATA_WIDTH     ; 32    ; Signed Integer                            ;
+; MEMORY_DEPTH   ; 256   ; Signed Integer                            ;
 +----------------+-------+-------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: DataMemory:RAM ;
-+----------------+-------+------------------------------------+
-; Parameter Name ; Value ; Type                               ;
-+----------------+-------+------------------------------------+
-; DATA_WIDTH     ; 32    ; Signed Integer                     ;
-; MEMORY_DEPTH   ; 256   ; Signed Integer                     ;
-+----------------+-------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1864,15 +1771,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------+
-; Port Connectivity Checks: "Adder32bits:PC_Puls_4" ;
-+--------------+-------+----------+-----------------+
-; Port         ; Type  ; Severity ; Details         ;
-+--------------+-------+----------+-----------------+
-; Data1[31..3] ; Input ; Info     ; Stuck at GND    ;
-; Data1[1..0]  ; Input ; Info     ; Stuck at GND    ;
-; Data1[2]     ; Input ; Info     ; Stuck at VCC    ;
-+--------------+-------+----------+-----------------+
++-------------------------------------------------+
+; Port Connectivity Checks: "Adder32bits:PC_ADD4" ;
++--------------+-------+----------+---------------+
+; Port         ; Type  ; Severity ; Details       ;
++--------------+-------+----------+---------------+
+; Data1[31..3] ; Input ; Info     ; Stuck at GND  ;
+; Data1[1..0]  ; Input ; Info     ; Stuck at GND  ;
+; Data1[2]     ; Input ; Info     ; Stuck at VCC  ;
++--------------+-------+----------+---------------+
 
 
 +-------------------------------------------------------------------------------+
@@ -1893,12 +1800,37 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 74                          ;
+; cycloneiii_ff         ; 72                          ;
+;     CLR SLD           ; 8                           ;
+;     ENA CLR           ; 64                          ;
+; cycloneiii_lcell_comb ; 249                         ;
+;     arith             ; 45                          ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 38                          ;
+;     normal            ; 204                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 54                          ;
+;         4 data inputs ; 140                         ;
+;                       ;                             ;
+; Max LUT depth         ; 15.80                       ;
+; Average LUT depth     ; 11.39                       ;
++-----------------------+-----------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -1906,160 +1838,126 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Analysis & Synthesis
-    Info: Version 12.1 Build 177 11/07/2012 SJ Web Edition
-    Info: Processing started: Tue Apr 17 04:12:33 2018
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Wed Apr 18 12:44:43 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS_PROCESSOR_PRAC2 -c MIPS_PROCESSOR_PRAC2
-Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 1 design units, including 1 entities, in source file decoderregisterfile.v
-    Info (12023): Found entity 1: DecoderRegisterFile
-Info (12021): Found 1 design units, including 1 entities, in source file muxregisterfile.v
-    Info (12023): Found entity 1: MUXRegisterFile
-Info (12021): Found 1 design units, including 1 entities, in source file register.v
-    Info (12023): Found entity 1: Register
-Info (12021): Found 1 design units, including 1 entities, in source file pc_register.v
-    Info (12023): Found entity 1: PC_Register
-Info (12021): Found 1 design units, including 1 entities, in source file adder32bits.v
-    Info (12023): Found entity 1: Adder32bits
-Info (12021): Found 1 design units, including 1 entities, in source file mips_processor_tb.v
-    Info (12023): Found entity 1: MIPS_Processor_TB
-Info (12021): Found 0 design units, including 0 entities, in source file definitions.v
-Info (12021): Found 1 design units, including 1 entities, in source file mips_processor.v
-    Info (12023): Found entity 1: MIPS_Processor
-Info (12021): Found 1 design units, including 1 entities, in source file multiplexer2to1.v
-    Info (12023): Found entity 1: Multiplexer2to1
-Info (12021): Found 1 design units, including 1 entities, in source file programmemory.v
-    Info (12023): Found entity 1: ProgramMemory
-Info (12021): Found 1 design units, including 1 entities, in source file alucontrol.v
-    Info (12023): Found entity 1: ALUControl
-Info (12021): Found 1 design units, including 1 entities, in source file datamemory.v
-    Info (12023): Found entity 1: DataMemory
-Info (12021): Found 1 design units, including 1 entities, in source file shiftleft2.v
-    Info (12023): Found entity 1: ShiftLeft2
-Info (12021): Found 1 design units, including 1 entities, in source file signextend.v
-    Info (12023): Found entity 1: SignExtend
-Info (12021): Found 1 design units, including 1 entities, in source file andgate.v
-    Info (12023): Found entity 1: ANDGate
-Info (12021): Found 1 design units, including 1 entities, in source file control.v
-    Info (12023): Found entity 1: Control
-Info (12021): Found 1 design units, including 1 entities, in source file registerfile.v
-    Info (12023): Found entity 1: RegisterFile
-Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALU
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file DecoderRegisterFile.v
+    Info (12023): Found entity 1: DecoderRegisterFile File: /home/c/Documents/GIT/Prac2/DecoderRegisterFile.v Line: 12
+Info (12021): Found 1 design units, including 1 entities, in source file MUXRegisterFile.v
+    Info (12023): Found entity 1: MUXRegisterFile File: /home/c/Documents/GIT/Prac2/MUXRegisterFile.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file Register.v
+    Info (12023): Found entity 1: Register File: /home/c/Documents/GIT/Prac2/Register.v Line: 12
+Info (12021): Found 1 design units, including 1 entities, in source file PC_Register.v
+    Info (12023): Found entity 1: PC_Register File: /home/c/Documents/GIT/Prac2/PC_Register.v Line: 15
+Info (12021): Found 1 design units, including 1 entities, in source file Adder32bits.v
+    Info (12023): Found entity 1: Adder32bits File: /home/c/Documents/GIT/Prac2/Adder32bits.v Line: 13
+Info (12021): Found 1 design units, including 1 entities, in source file MIPS_Processor_TB.v
+    Info (12023): Found entity 1: MIPS_Processor_TB File: /home/c/Documents/GIT/Prac2/MIPS_Processor_TB.v Line: 15
+Info (12021): Found 0 design units, including 0 entities, in source file Definitions.v
+Info (12021): Found 1 design units, including 1 entities, in source file MIPS_Processor.v
+    Info (12023): Found entity 1: MIPS_Processor File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file Multiplexer2to1.v
+    Info (12023): Found entity 1: Multiplexer2to1 File: /home/c/Documents/GIT/Prac2/Multiplexer2to1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ProgramMemory.v
+    Info (12023): Found entity 1: ProgramMemory File: /home/c/Documents/GIT/Prac2/ProgramMemory.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ALUControl.v
+    Info (12023): Found entity 1: ALUControl File: /home/c/Documents/GIT/Prac2/ALUControl.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file DataMemory.v
+    Info (12023): Found entity 1: DataMemory File: /home/c/Documents/GIT/Prac2/DataMemory.v Line: 13
+Info (12021): Found 1 design units, including 1 entities, in source file ShiftLeft2.v
+    Info (12023): Found entity 1: ShiftLeft2 File: /home/c/Documents/GIT/Prac2/ShiftLeft2.v Line: 12
+Info (12021): Found 1 design units, including 1 entities, in source file SignExtend.v
+    Info (12023): Found entity 1: SignExtend File: /home/c/Documents/GIT/Prac2/SignExtend.v Line: 14
+Info (12021): Found 1 design units, including 1 entities, in source file ANDGate.v
+    Info (12023): Found entity 1: ANDGate File: /home/c/Documents/GIT/Prac2/ANDGate.v Line: 13
+Info (12021): Found 1 design units, including 1 entities, in source file Control.v
+    Info (12023): Found entity 1: Control File: /home/c/Documents/GIT/Prac2/Control.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file RegisterFile.v
+    Info (12023): Found entity 1: RegisterFile File: /home/c/Documents/GIT/Prac2/RegisterFile.v Line: 15
+Info (12021): Found 1 design units, including 1 entities, in source file ALU.v
+    Info (12023): Found entity 1: ALU File: /home/c/Documents/GIT/Prac2/ALU.v Line: 20
 Info (12127): Elaborating entity "MIPS_Processor" for the top level hierarchy
-Info (12128): Elaborating entity "PC_Register" for hierarchy "PC_Register:programCounter"
-Info (12128): Elaborating entity "ProgramMemory" for hierarchy "ProgramMemory:InstructionMemory"
-Warning (10850): Verilog HDL warning at ProgramMemory.v(20): number of words (4) in memory file does not match the number of elements in the address range [0:255]
-Warning (10030): Net "rom.data_a" at ProgramMemory.v(16) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "rom.waddr_a" at ProgramMemory.v(16) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "rom.we_a" at ProgramMemory.v(16) has no driver or initial value, using a default initial value '0'
-Info (12128): Elaborating entity "Control" for hierarchy "Control:ControlUnit"
-Warning (10272): Verilog HDL Case Statement warning at Control.v(41): case item expression covers a value already covered by a previous case item
-Warning (10272): Verilog HDL Case Statement warning at Control.v(42): case item expression covers a value already covered by a previous case item
-Warning (10034): Output port "Jump" at Control.v(13) has no driver
-Info (12128): Elaborating entity "Multiplexer2to1" for hierarchy "Multiplexer2to1:MUX_RegisterWriteSelect"
-Info (12128): Elaborating entity "Multiplexer2to1" for hierarchy "Multiplexer2to1:MUX_ForReadDataAndInmediate"
-Info (12128): Elaborating entity "RegisterFile" for hierarchy "RegisterFile:Register_File"
-Info (12128): Elaborating entity "DecoderRegisterFile" for hierarchy "RegisterFile:Register_File|DecoderRegisterFile:Decoder"
-Info (12128): Elaborating entity "Register" for hierarchy "RegisterFile:Register_File|Register:Register_Zero"
-Info (12128): Elaborating entity "MUXRegisterFile" for hierarchy "RegisterFile:Register_File|MUXRegisterFile:MUXRegister1"
-Info (12128): Elaborating entity "SignExtend" for hierarchy "SignExtend:SignExtendForConstants"
-Info (12128): Elaborating entity "ALUControl" for hierarchy "ALUControl:ArithmeticLogicUnitControl"
-Warning (10935): Verilog HDL Casex/Casez warning at ALUControl.v(30): casex/casez item expression overlaps with a previous casex/casez item expression
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ArithmeticLogicUnit"
-Info (12128): Elaborating entity "Adder32bits" for hierarchy "Adder32bits:PC_Puls_4"
-Info (12128): Elaborating entity "DataMemory" for hierarchy "DataMemory:RAM"
-Info (12128): Elaborating entity "ShiftLeft2" for hierarchy "ShiftLeft2:BranchAddressShifter"
+Info (12128): Elaborating entity "PC_Register" for hierarchy "PC_Register:programCounter" File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 72
+Info (12128): Elaborating entity "ProgramMemory" for hierarchy "ProgramMemory:InstructionMemory" File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 83
+Warning (10850): Verilog HDL warning at ProgramMemory.v(20): number of words (4) in memory file does not match the number of elements in the address range [0:255] File: /home/c/Documents/GIT/Prac2/ProgramMemory.v Line: 20
+Warning (10030): Net "rom.data_a" at ProgramMemory.v(16) has no driver or initial value, using a default initial value '0' File: /home/c/Documents/GIT/Prac2/ProgramMemory.v Line: 16
+Warning (10030): Net "rom.waddr_a" at ProgramMemory.v(16) has no driver or initial value, using a default initial value '0' File: /home/c/Documents/GIT/Prac2/ProgramMemory.v Line: 16
+Warning (10030): Net "rom.we_a" at ProgramMemory.v(16) has no driver or initial value, using a default initial value '0' File: /home/c/Documents/GIT/Prac2/ProgramMemory.v Line: 16
+Info (12128): Elaborating entity "Control" for hierarchy "Control:ControlUnit" File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 99
+Info (12128): Elaborating entity "Multiplexer2to1" for hierarchy "Multiplexer2to1:MUX_RegDst" File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 112
+Info (12128): Elaborating entity "Multiplexer2to1" for hierarchy "Multiplexer2to1:MUX_ALUSrc" File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 124
+Info (12128): Elaborating entity "RegisterFile" for hierarchy "RegisterFile:Register_File" File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 177
+Info (12128): Elaborating entity "DecoderRegisterFile" for hierarchy "RegisterFile:Register_File|DecoderRegisterFile:Decoder" File: /home/c/Documents/GIT/Prac2/RegisterFile.v Line: 41
+Info (12128): Elaborating entity "Register" for hierarchy "RegisterFile:Register_File|Register:Register_Zero" File: /home/c/Documents/GIT/Prac2/RegisterFile.v Line: 57
+Info (12128): Elaborating entity "MUXRegisterFile" for hierarchy "RegisterFile:Register_File|MUXRegisterFile:MUXRegister1" File: /home/c/Documents/GIT/Prac2/RegisterFile.v Line: 479
+Info (12128): Elaborating entity "SignExtend" for hierarchy "SignExtend:SignExtendForConstants" File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 185
+Info (12128): Elaborating entity "ALUControl" for hierarchy "ALUControl:ArithmeticLogicUnitControl" File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 194
+Warning (10935): Verilog HDL Casex/Casez warning at ALUControl.v(32): casex/casez item expression overlaps with a previous casex/casez item expression File: /home/c/Documents/GIT/Prac2/ALUControl.v Line: 32
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:ArithmeticLogicUnit" File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 204
+Info (12128): Elaborating entity "Adder32bits" for hierarchy "Adder32bits:PC_ADD4" File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 214
+Info (12128): Elaborating entity "DataMemory" for hierarchy "DataMemory:DataMemory" File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 239
+Info (12128): Elaborating entity "ShiftLeft2" for hierarchy "ShiftLeft2:BranchAddressShifter" File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 247
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "RegisterFile:Register_File|DecoderRegisterFile:Decoder|Ram0" is uninferred due to asynchronous read logic
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/PortableGit/Prac2/db/MIPS_PROCESSOR_PRAC2.ram0_ProgramMemory_2093c3a2.hdl.mif" contains "don't care" values -- overwriting them with 0s
+    Info (276007): RAM logic "RegisterFile:Register_File|DecoderRegisterFile:Decoder|Ram0" is uninferred due to asynchronous read logic File: /home/c/Documents/GIT/Prac2/DecoderRegisterFile.v Line: 20
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "/home/c/Documents/GIT/Prac2/db/MIPS_PROCESSOR_PRAC2.ram0_ProgramMemory_2093c3a2.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "ALUResultOut[0]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[1]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[2]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[3]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[4]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[5]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[6]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[7]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[8]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[9]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[10]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[11]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[12]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[13]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[14]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[15]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[16]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[17]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[18]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[19]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[20]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[21]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[22]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[23]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[24]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[25]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[26]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[27]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[28]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[29]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[30]" is stuck at GND
-    Warning (13410): Pin "ALUResultOut[31]" is stuck at GND
-    Warning (13410): Pin "PortOut[0]" is stuck at GND
-    Warning (13410): Pin "PortOut[1]" is stuck at GND
-    Warning (13410): Pin "PortOut[2]" is stuck at GND
-    Warning (13410): Pin "PortOut[3]" is stuck at GND
-    Warning (13410): Pin "PortOut[4]" is stuck at GND
-    Warning (13410): Pin "PortOut[5]" is stuck at GND
-    Warning (13410): Pin "PortOut[6]" is stuck at GND
-    Warning (13410): Pin "PortOut[7]" is stuck at GND
-    Warning (13410): Pin "PortOut[8]" is stuck at GND
-    Warning (13410): Pin "PortOut[9]" is stuck at GND
-    Warning (13410): Pin "PortOut[10]" is stuck at GND
-    Warning (13410): Pin "PortOut[11]" is stuck at GND
-    Warning (13410): Pin "PortOut[12]" is stuck at GND
-    Warning (13410): Pin "PortOut[13]" is stuck at GND
-    Warning (13410): Pin "PortOut[14]" is stuck at GND
-    Warning (13410): Pin "PortOut[15]" is stuck at GND
-    Warning (13410): Pin "PortOut[16]" is stuck at GND
-    Warning (13410): Pin "PortOut[17]" is stuck at GND
-    Warning (13410): Pin "PortOut[18]" is stuck at GND
-    Warning (13410): Pin "PortOut[19]" is stuck at GND
-    Warning (13410): Pin "PortOut[20]" is stuck at GND
-    Warning (13410): Pin "PortOut[21]" is stuck at GND
-    Warning (13410): Pin "PortOut[22]" is stuck at GND
-    Warning (13410): Pin "PortOut[23]" is stuck at GND
-    Warning (13410): Pin "PortOut[24]" is stuck at GND
-    Warning (13410): Pin "PortOut[25]" is stuck at GND
-    Warning (13410): Pin "PortOut[26]" is stuck at GND
-    Warning (13410): Pin "PortOut[27]" is stuck at GND
-    Warning (13410): Pin "PortOut[28]" is stuck at GND
-    Warning (13410): Pin "PortOut[29]" is stuck at GND
-    Warning (13410): Pin "PortOut[30]" is stuck at GND
-    Warning (13410): Pin "PortOut[31]" is stuck at GND
-Info (17049): 926 registers lost all their fanouts during netlist optimizations.
+    Warning (13410): Pin "PortOut[0]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[1]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[2]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[3]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[4]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[5]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[6]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[7]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[8]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[9]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[10]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[11]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[12]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[13]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[14]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[15]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[16]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[17]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[18]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[19]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[20]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[21]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[22]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[23]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[24]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[25]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[26]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[27]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[28]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[29]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[30]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+    Warning (13410): Pin "PortOut[31]" is stuck at GND File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 18
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 896 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 10 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "PortIn[0]"
-    Warning (15610): No output dependent on input pin "PortIn[1]"
-    Warning (15610): No output dependent on input pin "PortIn[2]"
-    Warning (15610): No output dependent on input pin "PortIn[3]"
-    Warning (15610): No output dependent on input pin "PortIn[4]"
-    Warning (15610): No output dependent on input pin "PortIn[5]"
-    Warning (15610): No output dependent on input pin "PortIn[6]"
-    Warning (15610): No output dependent on input pin "PortIn[7]"
-    Warning (15610): No output dependent on input pin "clk"
-    Warning (15610): No output dependent on input pin "reset"
-Info (21057): Implemented 74 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 8 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "PortIn[0]" File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 15
+    Warning (15610): No output dependent on input pin "PortIn[1]" File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 15
+    Warning (15610): No output dependent on input pin "PortIn[2]" File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 15
+    Warning (15610): No output dependent on input pin "PortIn[3]" File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 15
+    Warning (15610): No output dependent on input pin "PortIn[4]" File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 15
+    Warning (15610): No output dependent on input pin "PortIn[5]" File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 15
+    Warning (15610): No output dependent on input pin "PortIn[6]" File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 15
+    Warning (15610): No output dependent on input pin "PortIn[7]" File: /home/c/Documents/GIT/Prac2/MIPS_Processor.v Line: 15
+Info (21057): Implemented 386 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 64 output pins
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 87 warnings
-    Info: Peak virtual memory: 356 megabytes
-    Info: Processing ended: Tue Apr 17 04:12:35 2018
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info (21061): Implemented 312 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 50 warnings
+    Info: Peak virtual memory: 962 megabytes
+    Info: Processing ended: Wed Apr 18 12:45:11 2018
+    Info: Elapsed time: 00:00:28
+    Info: Total CPU time (on all processors): 00:00:57
 
 

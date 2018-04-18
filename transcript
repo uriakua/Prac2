@@ -1,0 +1,50 @@
+# Loading project sim
+# Compile of Adder32bits.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALUControl.v was successful.
+# Compile of ANDGate.v was successful.
+# Compile of Control.v was successful.
+# Compile of DataMemory.v was successful.
+# Compile of DecoderRegisterFile.v was successful.
+# Compile of Definitions.v was successful.
+# Compile of MIPS_Processor.v was successful.
+# Compile of MIPS_Processor_TB.v was successful.
+# Compile of Multiplexer2to1.v was successful.
+# Compile of MUXRegisterFile.v was successful.
+# Compile of PC_Register.v was successful.
+# Compile of ProgramMemory.v was successful.
+# Compile of Register.v was successful.
+# Compile of RegisterFile.v was successful.
+# Compile of ShiftLeft2.v was successful.
+# Compile of SignExtend.v was successful.
+# 18 compiles, 0 failed with no errors.
+vsim work.MIPS_Processor_TB
+# vsim work.MIPS_Processor_TB 
+# Start time: 12:48:06 on Apr 18,2018
+# Loading work.MIPS_Processor_TB
+# Loading work.MIPS_Processor
+# Loading work.PC_Register
+# Loading work.ProgramMemory
+# Loading work.Control
+# Loading work.Multiplexer2to1
+# Loading work.RegisterFile
+# Loading work.DecoderRegisterFile
+# Loading work.Register
+# Loading work.MUXRegisterFile
+# Loading work.SignExtend
+# Loading work.ALUControl
+# Loading work.ALU
+# Loading work.Adder32bits
+# Loading work.DataMemory
+# Loading work.ShiftLeft2
+# ** Warning: (vsim-3017) /home/c/Documents/GIT/Prac2/MIPS_Processor.v(87): [TFMPC] - Too few port connections. Expected 11, found 10.
+#    Time: 0 ps  Iteration: 0  Instance: /MIPS_Processor_TB/DUV/ControlUnit File: /home/c/Documents/GIT/Prac2/Control.v
+# ** Warning: (vsim-3722) /home/c/Documents/GIT/Prac2/MIPS_Processor.v(87): [TFMPC] - Missing connection for port 'MemtoReg'.
+# ** Warning: (vsim-3015) /home/c/Documents/GIT/Prac2/MIPS_Processor.v(250): [PCDPC] - Port size (32) does not match connection size (26) for port 'DataInput'. The port definition is at: /home/c/Documents/GIT/Prac2/ShiftLeft2.v(14).
+#    Time: 0 ps  Iteration: 0  Instance: /MIPS_Processor_TB/DUV/JumpAddressShifter File: /home/c/Documents/GIT/Prac2/ShiftLeft2.v
+# ** Warning: (vsim-3015) /home/c/Documents/GIT/Prac2/MIPS_Processor.v(250): [PCDPC] - Port size (32) does not match connection size (28) for port 'DataOutput'. The port definition is at: /home/c/Documents/GIT/Prac2/ShiftLeft2.v(15).
+#    Time: 0 ps  Iteration: 0  Instance: /MIPS_Processor_TB/DUV/JumpAddressShifter File: /home/c/Documents/GIT/Prac2/ShiftLeft2.v
+do /home/c/Documents/GIT/Prac2/wave.do
+run
+# End time: 12:48:55 on Apr 18,2018, Elapsed time: 0:00:49
+# Errors: 0, Warnings: 4
